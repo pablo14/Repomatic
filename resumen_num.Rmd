@@ -1,0 +1,38 @@
+`r col_param`
+======
+
+### Distribution Plot
+```{r, echo=FALSE}
+  grafHistograma  
+```  
+
+### Descriptive Statistics
+```{r, echo=FALSE}
+  pandoc.table(dfDesc, format = "markdown")
+```
+
+### Density Plot
+```{r, echo=FALSE}
+ grafDensidad
+```
+
+### Percentiles
+```{r, echo=FALSE}
+  pandoc.table(dfQuantiles, format = "markdown")
+```
+
+### Boxplot
+```{r fig.width=4, fig.height=5, echo=FALSE}
+  grafBoxPlot
+```
+
+### Status Variable
+```{r fig.width=2, fig.height=2, echo=FALSE}
+  grafDataNA
+```
+
+```{r, echo=FALSE}
+  pandoc.table(dataNA_Table, format = "markdown")
+```
+
+  

@@ -1,0 +1,27 @@
+`r col_param`
+======
+
+### Distribution Plot
+```{r, echo=FALSE}
+if(cantDistintos<100)
+{
+  
+  grafDist
+}
+
+pandoc.table(dataSortedNotNA_NoFactor, format = "markdown")
+
+```
+```
+`r lblCasosUnicos`
+```
+### Variable Status
+```{r fig.width=2, fig.height=2, echo=FALSE}
+  grafDataNA
+```
+
+
+```{r, echo=FALSE}
+  pandoc.table(dataNA_Table, format = "markdown")
+```
+
